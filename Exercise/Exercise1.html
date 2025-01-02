@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EXERCISE WEBSITE</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f4f4;
+        color: #000000;
+        line-height: 1.6;
+    }
+    .container {
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+    h1 {
+        text-align: center;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    .lead {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #000000;
+        margin-top: -20px;
+    }
+    .qna {
+        margin-bottom: 30px;
+    }
+    .qna p {
+        margin: 10px 0;
+    }
+    .q {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #007BFF;
+    }
+    .a {
+    font-size: 1rem;
+    color: #000000;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+    <main class="container">
+        <h1>EXERCISE WEBSITE</h1>
+        <p class="lead">Jean-Marc Vega</p>
+
+        <section class="qna">
+            <p class="q">1. Talk about how you made your site and why you chose the tools you did.  Briefly explain one challenge you experienced in setting up this site and how you overcame it.</p>
+            <p class="a">The main challenge that I experience while making this exercise is deciding whether I should design it all throughout then I decided to stick with a very basic text-based site that only displays what was required, in this case, the questions and answers for the assessment./p>
+        </section>
+
+        <section class="qna">
+            <p class="q">2. What did you think of our service during the time you used it? Provide some constructive criticism or some features that impressed you.</p>
+            <p class="a">Overall, I find Netlify very easy to use, although my one gripe is regarding the icons on the left-side navigation bar. I found myself needing to hover on the icons just to figure out which page will it open to.</p>
+        </section>
+
+        <section class="qna">
+            <p class="q">3.Rank your 5 favorite and 5 least favorite activities from this list: https://gist.github.com/laurajodz/592402a6336410377dee1a744af846ab</p>
+            <p class="a"> Respond to 20+ support requests via email every day, Manage a Support team, Help manage communications during a service outage, Respond to Netlify customers on Twitter, and Work with prospective customers to explain our service and the pricing model. My least favorite are: Suggest and champion improvements to the Support team's workflow, Work with the development team to help design a new feature based on feedback from customers, Create video tutorials to help teach users a specific feature or use case, Set up your own copy of several site frameworks for debugging, and Develop a code example to share with a customer. </p>
+        </section>
+        
+        <section class="qna">
+            <p class="q">4. Provide a link to documentation for a technical/developer-focused product, which you think are well done, and explain why you think they are well done.</p>
+            <p class="a">Honestly, I initially didn’t really understand what this question implies. But I decided to pick VS Code as what I think is a developer-focused product that is very well done. The reasoning behind this opinion is easy as the VS Code itself is used by developers and is the main IDE that I use personally. Link: microsoft/vscode-docs: Public documentation for Visual Studio Code</p>
+        </section>
+        
+        <section class="qna">
+            <p class="q">5. Explain, in a couple of paragraphs, what you think are two major challenges around DNS configuration for less-technical customers hosting websites.</p>
+            <p class="a">There are multiple challenges someone can face while dealing with DNS configuration. From delays, cache issues, misconfiguring DNS records, the security risks and susceptibility, experiencing downtime, configuration and many more. But one of the major challenges that a user can face is the propagation delays a user will inevitably experience. This is the time that a change will reflect to a domain before reaching the internet or the end-user of the software or website. The delay is caused by the communication to DNS servers throughout the internet and its dependency on the DNS cache’s efficiency . 
+            </p>The second major challenge is the security risks of DNS and understanding them. It is susceptible to attacks in forms of spoofing and DDoS attacks that are mainly targeted towards the DNS servers. The effects includes having the users redirected to fake websites with malicious intent, disrupting your website’s services and acquire sensitive data from the DNS.</p>
+            </p>
+        </section>
+        
+        <section class="qna">
+            <p class="q">6. A customer writes in to Support saying simply that their “site won’t build”. You have access to their build logs, and there you see this error: Build failed due to a user error: Build script returned non-zero exit code: 2. You have no more information than this and the site’s source repository is private so you cannot test the build yourself. How would you troubleshoot this issue? What steps would you take? Also, please compose your best customer-facing first response. </p>
+            <p class="a">“Hello! (customer name),
+                Thank you for reaching out to us regarding the issue that you’re facing. The error message you’ve sent usually indicates a user-related error during the build process. It may be a misconfiguration with the script or a missing dependency.<p>
+                    <p>  To resolve this issue, here are a few steps that you can do:</p>
+               <p>-	Check if there are any recent changes that was done to the code, script or configuration.</p>
+               <p> -	Check if there are permission issues or file issues with your build’s file and directories.</p>
+               <p>-	Check if all dependencies are installed correctly and up to date.</p>
+               <p>I would also like to ask for the full build log so we could pinpoint the issue. While I cannot directly test the build from here due to the private nature of your repository, I’m happy to assist you step-by-step in resolving this. Please let me know if you encounter any specific issues with the above checks, or if you need assistance reviewing your build script or environment setup.
+                I am looking forward to your response and always happy to help.</p>
+                <p> Regards,</p>
+                    <p> Jean-Marc Vega</p>
+                </p>
+        </section>
+        
+        <section class="qna">
+            <p class="q">7. How would you set up an http 301 status redirect from “/netlify/anything” on your site, to https://www.google.com/search?q=anything. Please provide the redirect formatting here. Now, how about a proxy redirect? Please add that proxy redirect rule directly to your site.</p>
+            <p class="a">To set up an http 301 status redirect from “/netlify/anything” on my site to https://www.google.com/search?q=anything, I would use “/netlify/:anything   https://www.google.com/search?q=:anything   301!” to the redirect file.. For a proxy redirect I would use “/netlify/:anything   https://www.example.com/:anything   200” to the redirect file.</p>
+        </section>
+        
+        <section class="qna">
+            <p class="q">8. Please attempt to deploy a function on our service. This need not be complicated. It could be "Hello World". Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.</p>
+            <p class="a">I successfully deployed “https://rmms-megawide.netlify.app” into Netlify very easily. </p>
+        </section>
+        
+        <section class="qna">
+            <p class="q">9. We understand you don't know anything about our internal procedures at this stage, but we want you to explain at a high level how you'd react to this situation: You receive a report of a severe security issue on www.netlify.com. You can't immediately confirm the report, so what steps might you take to investigate or substantiate the report? What might you say to the reporter, even though we haven't confirmed their assertion yet, that will instill confidence that our business is very concerned about security? You believe there is a reasonable chance the report is correct and the problem is very large and impactful. How might you escalate?</p>
+            <p class="a">The first step that I would take in this situation if acknowledging the report and making sure that the customer feels our concern about their security. The next step is to asses and verify the report and collect as much information as possible by requesting details regarding said security issue. Once I have all the information, I can then begin analyzing the problem by reviewing the logs, trying to reproduce the issue in a safe environment and inquiring the security team (if present) and learn more regarding the scale of the issue. In the event that I cannot resolve the issue and  is too much for me to handle personally, I would then need to escalate and notify senior leadership or security team for assistance. The issue should be handled as fast as possible to remove any risks of damaging relationships with the reporter.</p>
+        </section>
+        
+    </main>
+</body>
+</html>
